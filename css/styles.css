@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: 'Footlight MT', sans-serif;
+  background-color: #000; /* Dark background */
+  color: #ffff;
+}
+
+header {
+    display: flex; /* Enables flexbox for the header */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Places space between logo and nav */
+    padding: 20px; /* Adds padding around the header */
+    background-color: #111; /* Dark background for contrast */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.logo-container {
+    margin-right: 20px; /* Space between logo and navigation */
+    display: flex; /* Allows for flexible alignment */
+    align-items: center; /* Vertically centers the logo */
+}
+
+.logo {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    border: none; /* Removes any default border */
+}
+
+nav {
+    display: flex; /* Enables flexbox for navigation */
+    justify-content: flex-end; /* Aligns navigation items to the right */
+    flex-grow: 1; /* Allows nav to take remaining space */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.nav-links li a:hover {
+    color: red; /* Change color on hover */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px); /* Full height minus header and footer */
+}
+
+form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: red;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+footer {
+    padding: 20px;
+    background-color: #111;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100px; /* Optional: Set a height for the footer */
+}
+
+
+
+.hero 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: url('background-image.jpg') no-repeat center center/cover;
+}
+
+.content 
+{
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h1 span {
+  color: blue;
+}
+
+h2 {
+  font-size: 56px;
+  margin-top: -10px;
+}
+
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+
+.image-container img 
+{
+  width: 600px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: center;  /* Center the contents horizontally */
+    align-items: flex-end;    /* Align them vertically at the bottom */
+    gap: 40px;                /* Add space between the chatbot and QR code */
+    padding: 20px;
+    margin-bottom: 50px;      /* Adjust space between the content and footer */
+}
+
+.chatbot-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh; /* Full viewport height */
+}
+
+.chatbot-container iframe {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.qr-code-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.qr-code-container img {
+    width: 20px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 20px solid #ccc; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.resume-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+  
+  
